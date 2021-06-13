@@ -1,0 +1,16 @@
+{
+  "name": "nats-ecom-streaming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "nats": "nodemon index,js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-nats-streaming": "^0.3.2",
+    "nodemon": "^2.0.7"
+  }
+}
