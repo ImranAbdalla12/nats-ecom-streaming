@@ -4,6 +4,14 @@ class Nats {
   constructor(client) {
     this.client = client;
   }
+
+  client() {
+    if (!this.client) {
+      throw new Error("Can not access NATS before connecting");
+    }
+    return this.client;
+  }
+
   connect(clusterID, clientID, url) {
     this.client = nats.connect(clusterID, clientID, { url });
     return new Promise((resolve, reject) => {
